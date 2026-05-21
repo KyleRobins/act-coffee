@@ -1,4 +1,4 @@
-export const APPLY_URL = "GOOGLE_FORM_URL_PLACEHOLDER";
+export const APPLY_URL = "https://forms.gle/siPb5FzZWvezdN5VA";
 
 export interface Stat {
   label: string;
