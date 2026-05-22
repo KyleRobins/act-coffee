@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-import { ABOUT_COPY, APPLY_URL } from "@/lib/data";
+import { ABOUT_COPY, APPLY_URL, FUNDING_PARTNERS, IMPLEMENTING_PARTNERS } from "@/lib/data";
 
 export function About() {
   const shouldReduceMotion = useReducedMotion();
@@ -112,34 +113,29 @@ export function About() {
               </p>
             </div>
 
-            {/* Partner pill chips */}
-            <div className="flex flex-wrap gap-2" aria-label="Implementing partners">
-              {ABOUT_COPY.partners.map((partner) => (
-                <span
-                  key={partner}
-                  className="inline-flex items-center px-3.5 py-2 rounded-full text-xs font-semibold"
-                  style={{
-                    background: "rgba(61,26,16,0.06)",
-                    color: "var(--act-brown)",
-                    fontFamily: "var(--font-dm-sans)",
-                    border: "1px solid rgba(61,26,16,0.12)",
-                    letterSpacing: "0.03em",
-                  }}
+            {/* Partner logo grid */}
+            <div className="flex flex-wrap gap-x-6 gap-y-4 items-center" aria-label="Delivering partners">
+              {[...FUNDING_PARTNERS, ...IMPLEMENTING_PARTNERS].map((partner) => (
+                <a
+                  key={partner.name}
+                  href={partner.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={partner.name}
+                  className="transition-all"
+                  style={{ filter: "grayscale(1) opacity(0.5)" }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.filter = "grayscale(0) opacity(1)"; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.filter = "grayscale(1) opacity(0.5)"; }}
                 >
-                  {partner}
-                </span>
+                  <Image
+                    src={partner.logoUrl}
+                    alt={partner.name}
+                    width={80}
+                    height={32}
+                    style={{ objectFit: "contain", maxHeight: "32px", width: "auto" }}
+                  />
+                </a>
               ))}
-              <span
-                className="inline-flex items-center px-3.5 py-2 rounded-full text-xs font-semibold"
-                style={{
-                  background: "rgba(61,26,16,0.06)",
-                  color: "var(--act-brown)",
-                  fontFamily: "var(--font-dm-sans)",
-                  border: "1px solid rgba(61,26,16,0.12)",
-                }}
-              >
-                + 5 more
-              </span>
             </div>
 
             {/* Small stat strip */}
