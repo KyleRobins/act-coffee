@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
-import { Menu, X, Coffee } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { APPLY_URL } from "@/lib/data";
@@ -41,25 +42,15 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2" aria-label="ACT Programme — Home">
-            <div
-              className="w-8 h-8 rounded-full flex items-center justify-center"
-              style={{ background: "var(--act-brown)" }}
-            >
-              <Coffee className="w-4 h-4 text-white" aria-hidden="true" />
-            </div>
-            <div className="leading-none">
-              <span
-                className="font-bold text-sm"
-                style={{
-                  fontFamily: "var(--font-dm-sans)",
-                  color: "var(--act-text)",
-                  letterSpacing: "0.08em",
-                }}
-              >
-                ACT Programme
-              </span>
-            </div>
+          <a href="#" className="flex items-center" aria-label="ACT Programme — Home">
+            <Image
+              src="/images/act.png"
+              alt="ACT Programme"
+              width={80}
+              height={40}
+              style={{ objectFit: "contain", height: "40px", width: "auto" }}
+              priority
+            />
           </a>
 
           {/* Desktop nav */}
@@ -114,14 +105,13 @@ export function Navbar() {
             <SheetContent side="right" className="w-72 p-0" style={{ background: "white" }} showCloseButton={false}>
               <div className="flex flex-col h-full pt-6 px-5">
                 <div className="flex items-center justify-between mb-8">
-                  <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ background: "var(--act-brown)" }}>
-                      <Coffee className="w-3.5 h-3.5 text-white" />
-                    </div>
-                    <span className="font-bold text-sm" style={{ fontFamily: "var(--font-dm-sans)", color: "var(--act-text)", letterSpacing: "0.06em" }}>
-                      ACT Programme
-                    </span>
-                  </div>
+                  <Image
+                    src="/images/act.png"
+                    alt="ACT Programme"
+                    width={72}
+                    height={36}
+                    style={{ objectFit: "contain", height: "36px", width: "auto" }}
+                  />
                   <button
                     onClick={() => setMobileOpen(false)}
                     className="p-1.5 rounded-lg hover:bg-gray-100 transition-colors"
