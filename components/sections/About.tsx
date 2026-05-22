@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-import { ABOUT_COPY, APPLY_URL, FUNDING_PARTNERS, IMPLEMENTING_PARTNERS } from "@/lib/data";
+import { ABOUT_COPY, APPLY_URL } from "@/lib/data";
 
 export function About() {
   const shouldReduceMotion = useReducedMotion();
@@ -111,31 +110,6 @@ export function About() {
               <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "16px", lineHeight: "1.75", color: "var(--act-muted)" }}>
                 A landmark collaboration uniting leading international development organisations, renowned coffee companies, and Kenya&rsquo;s foremost academic and research institutions.
               </p>
-            </div>
-
-            {/* Partner logo grid */}
-            <div className="flex flex-wrap gap-x-6 gap-y-4 items-center" aria-label="Delivering partners">
-              {[...FUNDING_PARTNERS, ...IMPLEMENTING_PARTNERS].map((partner) => (
-                <a
-                  key={partner.name}
-                  href={partner.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={partner.name}
-                  className="transition-all"
-                  style={{ filter: "grayscale(1) opacity(0.5)" }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.filter = "grayscale(0) opacity(1)"; }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.filter = "grayscale(1) opacity(0.5)"; }}
-                >
-                  <Image
-                    src={partner.logoUrl}
-                    alt={partner.name}
-                    width={80}
-                    height={32}
-                    style={{ objectFit: "contain", maxHeight: "32px", width: "auto" }}
-                  />
-                </a>
-              ))}
             </div>
 
             {/* Small stat strip */}
