@@ -17,16 +17,17 @@ export interface Partner {
   website: string;
 }
 export const PARTNERS: Partner[] = [
-  { name: "UNIDO", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_UNIDO", website: "https://www.unido.org" },
-  { name: "E4Impact", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_E4IMPACT", website: "https://www.e4impact.org" },
-  { name: "Università Cattolica", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_UNICATT", website: "https://www.unicatt.it" },
-  { name: "illycaffè", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_ILLY", website: "https://www.illy.com" },
-  { name: "Fondazione illy", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_FONDILLY", website: "https://www.fondazioneilly.com" },
-  { name: "Lavazza", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_LAVAZZA", website: "https://www.lavazza.com" },
-  { name: "Slow Food", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_SLOWFOOD", website: "https://www.slowfood.com" },
-  { name: "CRI Kenya", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_CRI", website: "https://www.cri.go.ke" },
-  { name: "Dedan Kimathi University", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_DEDAN", website: "https://www.dkut.ac.ke" },
-  { name: "Italian Cooperation", logoUrl: "CLOUDINARY_URL_PLACEHOLDER_ITALCOOP", website: "https://www.aics.gov.it" },
+  { name: "UNIDO", logoUrl: "/images/unido.png", website: "https://www.unido.org" },
+  { name: "E4Impact", logoUrl: "/images/act.png", website: "https://www.e4impact.org" },
+  { name: "Università Cattolica", logoUrl: "/images/university-of-catolica.png", website: "https://www.unicatt.it" },
+  { name: "illycaffè", logoUrl: "/images/fondazone-ennesto.png", website: "https://www.illy.com" },
+  { name: "Fondazione illy", logoUrl: "/images/fondazione.png", website: "https://www.fondazioneilly.com" },
+  { name: "Slow Food", logoUrl: "/images/slow-food.png", website: "https://www.slowfood.com" },
+  { name: "KALRO", logoUrl: "/images/kalro.png", website: "https://www.kalro.org" },
+  { name: "IASP", logoUrl: "/images/iasp.png", website: "https://www.iasp.ws" },
+  { name: "Italian Cooperation", logoUrl: "/images/republic-of-italiano.png", website: "https://www.aics.gov.it" },
+  { name: "Dedan Kimathi University", logoUrl: "", website: "https://www.dkut.ac.ke" },
+  { name: "Lavazza", logoUrl: "", website: "https://www.lavazza.com" },
 ];
 
 export interface EligibilityCriterion {

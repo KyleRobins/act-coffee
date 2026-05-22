@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { PARTNERS } from "@/lib/data";
 
@@ -64,12 +65,11 @@ export function Partners() {
               }}
               aria-label={`${partner.name} — visit website`}
             >
-              {/* TODO: Replace with Cloudinary URL — {partner.name} logo */}
               <div
                 className="flex items-center justify-center"
                 style={{
                   minWidth: "90px",
-                  height: "38px",
+                  height: "48px",
                   background: "white",
                   borderRadius: "8px",
                   padding: "6px 14px",
@@ -77,17 +77,27 @@ export function Partners() {
                   boxShadow: "0 1px 3px rgba(0,0,0,0.04)",
                 }}
               >
-                <span
-                  className="text-xs font-semibold text-center leading-tight"
-                  style={{
-                    fontFamily: "var(--font-dm-sans)",
-                    color: "var(--act-text)",
-                    whiteSpace: "nowrap",
-                    letterSpacing: "0.04em",
-                  }}
-                >
-                  {partner.name}
-                </span>
+                {partner.logoUrl ? (
+                  <Image
+                    src={partner.logoUrl}
+                    alt={partner.name}
+                    width={100}
+                    height={36}
+                    style={{ objectFit: "contain", maxHeight: "36px", width: "auto" }}
+                  />
+                ) : (
+                  <span
+                    className="text-xs font-semibold text-center leading-tight"
+                    style={{
+                      fontFamily: "var(--font-dm-sans)",
+                      color: "var(--act-text)",
+                      whiteSpace: "nowrap",
+                      letterSpacing: "0.04em",
+                    }}
+                  >
+                    {partner.name}
+                  </span>
+                )}
               </div>
             </motion.a>
           ))}
@@ -106,23 +116,34 @@ export function Partners() {
                   className="flex items-center justify-center"
                   style={{
                     minWidth: "72px",
-                    height: "32px",
-                    background: "rgba(61,26,16,0.06)",
+                    height: "40px",
+                    background: "white",
                     borderRadius: "6px",
                     padding: "6px 10px",
+                    border: "1px solid rgba(0,0,0,0.09)",
                   }}
                 >
-                  <span
-                    className="text-xs font-semibold"
-                    style={{
-                      fontFamily: "var(--font-dm-sans)",
-                      color: "var(--act-brown)",
-                      whiteSpace: "nowrap",
-                      fontSize: "11px",
-                    }}
-                  >
-                    {partner.name}
-                  </span>
+                  {partner.logoUrl ? (
+                    <Image
+                      src={partner.logoUrl}
+                      alt={partner.name}
+                      width={72}
+                      height={28}
+                      style={{ objectFit: "contain", maxHeight: "28px", width: "auto" }}
+                    />
+                  ) : (
+                    <span
+                      className="text-xs font-semibold"
+                      style={{
+                        fontFamily: "var(--font-dm-sans)",
+                        color: "var(--act-brown)",
+                        whiteSpace: "nowrap",
+                        fontSize: "11px",
+                      }}
+                    >
+                      {partner.name}
+                    </span>
+                  )}
                 </div>
               </div>
             ))}
