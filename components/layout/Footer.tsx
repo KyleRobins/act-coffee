@@ -1,6 +1,7 @@
 "use client";
 
-import { Coffee, Mail, Globe, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { Mail, Globe, ExternalLink } from "lucide-react";
 
 const COMPANY_LINKS = [
   { label: "About Us", href: "#about" },
@@ -38,13 +39,14 @@ export function Footer() {
 
           {/* Col 1: Company */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(255,255,255,0.12)" }}>
-                <Coffee className="w-3.5 h-3.5 text-white" aria-hidden="true" />
-              </div>
-              <span className="font-bold text-white text-sm" style={{ fontFamily: "var(--font-dm-sans)", letterSpacing: "0.08em" }}>
-                ACT Programme
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/images/act.png"
+                alt="ACT Programme"
+                width={80}
+                height={40}
+                style={{ objectFit: "contain", height: "40px", width: "auto", filter: "brightness(0) invert(1)" }}
+              />
             </div>
             <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "13px", lineHeight: "1.75", color: "rgba(255,255,255,0.5)", marginBottom: "16px" }}>
               Advancing Climate-Resilience and Transformation in African Coffee. Implemented by E4Impact Foundation.
