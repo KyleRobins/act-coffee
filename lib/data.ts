@@ -16,18 +16,23 @@ export interface Partner {
   logoUrl: string;
   website: string;
 }
-export const PARTNERS: Partner[] = [
-  { name: "UNIDO", logoUrl: "/images/unido.png", website: "https://www.unido.org" },
-  { name: "E4Impact", logoUrl: "/images/act.png", website: "https://www.e4impact.org" },
-  { name: "Università Cattolica", logoUrl: "/images/university-of-catolica.png", website: "https://www.unicatt.it" },
-  { name: "illycaffè", logoUrl: "/images/fondazone-ennesto.png", website: "https://www.illy.com" },
-  { name: "Fondazione illy", logoUrl: "/images/fondazione.png", website: "https://www.fondazioneilly.com" },
-  { name: "Slow Food", logoUrl: "/images/slow-food.png", website: "https://www.slowfood.com" },
-  { name: "KALRO", logoUrl: "/images/kalro.png", website: "https://www.kalro.org" },
-  { name: "IASP", logoUrl: "/images/iasp.png", website: "https://www.iasp.ws" },
+
+export const FUNDING_PARTNERS: Partner[] = [
+  { name: "Global Gateway", logoUrl: "/images/global-gateway.png", website: "https://global-gateway.europa.eu" },
   { name: "Italian Cooperation", logoUrl: "/images/republic-of-italiano.png", website: "https://www.aics.gov.it" },
-  { name: "Dedan Kimathi University", logoUrl: "", website: "https://www.dkut.ac.ke" },
-  { name: "Lavazza", logoUrl: "", website: "https://www.lavazza.com" },
+  { name: "UNIDO", logoUrl: "/images/unido.png", website: "https://www.unido.org" },
+  { name: "ACT Programme", logoUrl: "/images/act.png", website: "https://www.e4impact.org" },
+];
+
+export const IMPLEMENTING_PARTNERS: Partner[] = [
+  { name: "E4Impact Foundation", logoUrl: "/images/e4i-foundation.png", website: "https://www.e4impact.org" },
+  { name: "Fondazione Lavazza", logoUrl: "/images/fondazione.png", website: "https://www.fondazionelavazza.it" },
+  { name: "Fondazione Ernesto Illy", logoUrl: "/images/fondazone-ennesto.png", website: "https://www.fondazioneilly.com" },
+  { name: "KALRO", logoUrl: "/images/kalro.png", website: "https://www.kalro.org" },
+  { name: "Slow Food", logoUrl: "/images/slow-food.png", website: "https://www.slowfood.com" },
+  { name: "IASP", logoUrl: "/images/iasp.png", website: "https://www.iasp.ws" },
+  { name: "Università Cattolica", logoUrl: "/images/university-of-catolica.png", website: "https://www.unicatt.it" },
+  { name: "Dedan Kimathi University", logoUrl: "/images/dedan-kimathi.png", website: "https://www.dkut.ac.ke" },
 ];
 
 export interface EligibilityCriterion {
