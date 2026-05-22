@@ -19,7 +19,7 @@ export function Venue() {
     <section
       id="venue"
       className="py-20 lg:py-28"
-      style={{ background: "#FAFAF9" }}
+      style={{ background: "var(--act-blush)" }}
       aria-labelledby="venue-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,7 +64,7 @@ export function Venue() {
                     key={format}
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium"
                     style={{
-                      background: "white",
+                      background: "var(--act-offwhite)",
                       color: "var(--act-text)",
                       fontFamily: "var(--font-dm-sans)",
                       border: "1px solid rgba(0,0,0,0.1)",
@@ -82,8 +82,8 @@ export function Venue() {
             <div
               className="inline-flex items-center gap-3 rounded-xl px-5 py-4"
               style={{
-                background: "rgba(61,26,16,0.06)",
-                border: "1px solid rgba(61,26,16,0.1)",
+                background: "rgba(90,31,34,0.06)",
+                border: "1px solid rgba(90,31,34,0.1)",
               }}
             >
               <Clock className="w-5 h-5 flex-shrink-0" style={{ color: "var(--act-brown)" } as React.CSSProperties} aria-hidden="true" />
@@ -102,19 +102,19 @@ export function Venue() {
           >
             <div
               className="rounded-2xl overflow-hidden shadow-sm"
-              style={{ background: "white", border: "1px solid rgba(0,0,0,0.07)" }}
+              style={{ background: "var(--act-offwhite)", border: "1px solid rgba(0,0,0,0.07)" }}
             >
               {/* Map visual */}
               <div
                 className="w-full h-52 flex items-center justify-center relative"
                 style={{
-                  background: "linear-gradient(135deg, #1a3320 0%, #2C4A2E 50%, #3D1A10 100%)",
+                  background: "linear-gradient(135deg, #5A1F22 0%, #7B2D32 50%, #E86F87 100%)",
                 }}
                 aria-label="Location map for CRI Nairobi"
               >
                 <div className="relative flex flex-col items-center">
                   <div className="w-5 h-5 rounded-full shadow-lg" style={{ background: "var(--act-orange)" }} aria-hidden="true" />
-                  <div className="w-px h-8 mt-1" style={{ background: "rgba(232,148,26,0.5)" }} aria-hidden="true" />
+                  <div className="w-px h-8 mt-1" style={{ background: "rgba(245,163,84,0.5)" }} aria-hidden="true" />
                   <div
                     className="absolute -top-1 -left-1 w-8 h-8 rounded-full opacity-25"
                     style={{ background: "var(--act-orange)", animation: "ping 2.2s cubic-bezier(0,0,0.2,1) infinite" }}
@@ -133,7 +133,7 @@ export function Venue() {
               {/* Address block */}
               <div className="p-6">
                 <div className="flex items-start gap-3 mb-5">
-                  <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: "rgba(61,26,16,0.07)" }}>
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: "rgba(90,31,34,0.07)" }}>
                     <MapPin className="w-4 h-4" style={{ color: "var(--act-brown)" } as React.CSSProperties} aria-hidden="true" />
                   </div>
                   <div>

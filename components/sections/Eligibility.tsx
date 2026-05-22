@@ -31,7 +31,7 @@ export function Eligibility() {
     <section
       id="eligibility"
       className="py-20 lg:py-28"
-      style={{ background: "white" }}
+      style={{ background: "var(--act-offwhite)" }}
       aria-labelledby="eligibility-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -113,13 +113,13 @@ export function Eligibility() {
                 style={
                   isHighlighted
                     ? { background: "var(--act-brown)", border: "1px solid transparent" }
-                    : { background: "white", border: "1px solid rgba(0,0,0,0.08)", boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }
+                    : { background: "var(--act-offwhite)", border: "1px solid rgba(0,0,0,0.08)", boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }
                 }
               >
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{
-                    background: isHighlighted ? "rgba(255,255,255,0.15)" : "rgba(61,26,16,0.07)",
+                    background: isHighlighted ? "rgba(255,255,255,0.15)" : "rgba(90,31,34,0.07)",
                   }}
                   aria-hidden="true"
                 >

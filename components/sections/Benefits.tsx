@@ -24,7 +24,7 @@ export function Benefits() {
     <section
       id="benefits"
       className="py-20 lg:py-28"
-      style={{ background: "white" }}
+      style={{ background: "var(--act-offwhite)" }}
       aria-labelledby="benefits-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,7 +77,7 @@ export function Benefits() {
                   isCenter
                     ? { background: "var(--act-brown)" }
                     : {
-                        background: "white",
+                        background: "var(--act-offwhite)",
                         border: "1px solid rgba(0,0,0,0.08)",
                         boxShadow: "0 2px 10px rgba(0,0,0,0.04)",
                       }
@@ -87,7 +87,7 @@ export function Benefits() {
                 <span
                   className="self-start text-xs font-semibold rounded-full px-2.5 py-1"
                   style={{
-                    background: isCenter ? "rgba(255,255,255,0.15)" : "rgba(61,26,16,0.07)",
+                    background: isCenter ? "rgba(255,255,255,0.15)" : "rgba(90,31,34,0.07)",
                     color: isCenter ? "white" : "var(--act-brown)",
                     fontFamily: "var(--font-dm-sans)",
                     letterSpacing: "0.06em",
@@ -100,7 +100,7 @@ export function Benefits() {
                 {/* Big icon / metric */}
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center"
-                  style={{ background: isCenter ? "rgba(255,255,255,0.12)" : "rgba(61,26,16,0.06)" }}
+                  style={{ background: isCenter ? "rgba(255,255,255,0.12)" : "rgba(90,31,34,0.06)" }}
                   aria-hidden="true"
                 >
                   <Icon
@@ -167,14 +167,14 @@ export function Benefits() {
                 whileHover={shouldReduceMotion ? {} : { y: -3 }}
                 className="rounded-2xl p-7 flex gap-5 items-start"
                 style={{
-                  background: "white",
+                  background: "var(--act-offwhite)",
                   border: "1px solid rgba(0,0,0,0.08)",
                   boxShadow: "0 2px 10px rgba(0,0,0,0.04)",
                 }}
               >
                 <div
                   className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
-                  style={{ background: "rgba(61,26,16,0.07)" }}
+                  style={{ background: "rgba(90,31,34,0.07)" }}
                   aria-hidden="true"
                 >
                   <Icon className="w-5 h-5" style={{ color: "var(--act-brown)" }} aria-hidden="true" />

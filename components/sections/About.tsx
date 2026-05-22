@@ -14,7 +14,7 @@ export function About() {
     <section
       id="about"
       className="py-20 lg:py-28"
-      style={{ background: "white" }}
+      style={{ background: "var(--act-offwhite)" }}
       aria-labelledby="about-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,7 +86,7 @@ export function About() {
           >
             <div
               className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl"
-              style={{ background: "rgba(61,26,16,0.08)" }}
+              style={{ background: "rgba(90,31,34,0.08)" }}
               aria-hidden="true"
             />
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-md">
@@ -141,7 +141,7 @@ export function About() {
             {/* Small stat strip */}
             <div
               className="grid grid-cols-3 gap-4 rounded-xl p-5"
-              style={{ background: "rgba(61,26,16,0.04)", border: "1px solid rgba(61,26,16,0.08)" }}
+              style={{ background: "rgba(90,31,34,0.04)", border: "1px solid rgba(90,31,34,0.08)" }}
             >
               {[
                 { v: "8", l: "Months" },

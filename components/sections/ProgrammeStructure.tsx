@@ -26,7 +26,7 @@ export function ProgrammeStructure() {
     <section
       id="programme"
       className="py-20 lg:py-28"
-      style={{ background: "#FAFAF9" }}
+      style={{ background: "var(--act-blush)" }}
       aria-labelledby="programme-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,7 +74,7 @@ export function ProgrammeStructure() {
                 whileHover={shouldReduceMotion ? {} : { y: -4 }}
                 className="rounded-2xl overflow-hidden flex flex-col"
                 style={{
-                  background: "white",
+                  background: "var(--act-offwhite)",
                   border: "1px solid rgba(0,0,0,0.07)",
                   boxShadow: "0 2px 12px rgba(0,0,0,0.05)",
                 }}
@@ -90,7 +90,7 @@ export function ProgrammeStructure() {
                     fill
                     gradientFrom={
                       mod.tagColor === "#2C4A2E" ? "#1a3320"
-                        : mod.tagColor === "#D95F4B" ? "#5a2015"
+                        : mod.tagColor === "#E86F87" ? "#5A1F22"
                         : "#311540"
                     }
                     gradientTo={mod.tagColor}

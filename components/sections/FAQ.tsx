@@ -16,7 +16,7 @@ export function FAQ() {
     <section
       id="faq"
       className="py-20 lg:py-28"
-      style={{ background: "#FAFAF9" }}
+      style={{ background: "var(--act-blush)" }}
       aria-labelledby="faq-heading"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +59,7 @@ export function FAQ() {
                 className="mb-3 rounded-xl overflow-hidden"
                 style={{
                   border: "1px solid rgba(0,0,0,0.08)",
-                  background: "white",
+                  background: "var(--act-offwhite)",
                 }}
               >
                 <AccordionTrigger

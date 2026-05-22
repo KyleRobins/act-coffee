@@ -106,7 +106,7 @@ export function ApplicationCTA() {
               onClick={() => window.open(APPLY_URL, "_blank", "noopener,noreferrer")}
               className="inline-flex items-center gap-2 font-bold rounded-full px-8 py-4 text-base h-auto"
               style={{
-                background: "white",
+                background: "var(--act-offwhite)",
                 color: "var(--act-brown)",
                 fontFamily: "var(--font-dm-sans)",
                 fontSize: "16px",

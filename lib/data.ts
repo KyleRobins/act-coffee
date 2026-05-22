@@ -92,7 +92,7 @@ export const MODULES: Module[] = [
   },
   {
     tag: "Module 2 · Downstream",
-    tagColor: "#D95F4B",
+    tagColor: "#E86F87",
     title: "Innovations in Coffee Distribution & Marketing",
     body: "Master market access strategies, brand positioning, export readiness, and specialty coffee marketing. Learn from industry leaders how Kenyan coffee can capture premium international markets and build lasting commercial relationships.",
     icon: "TrendingUp",

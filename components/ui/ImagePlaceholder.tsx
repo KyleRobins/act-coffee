@@ -23,8 +23,8 @@ export function ImagePlaceholder({
   fill = false,
   width,
   height,
-  gradientFrom = "#2C4A2E",
-  gradientTo = "#3D1A10",
+  gradientFrom = "#5A1F22",
+  gradientTo = "#E86F87",
   priority = false,
 }: ImagePlaceholderProps) {
   const isPlaceholder = src.includes("PLACEHOLDER") || src.includes("CLOUDINARY_URL_PLACEHOLDER");
@@ -45,8 +45,8 @@ export function ImagePlaceholder({
         <div
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(232,148,26,0.3) 0%, transparent 50%),
-                              radial-gradient(circle at 75% 75%, rgba(44,74,46,0.4) 0%, transparent 50%)`,
+            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(245,163,84,0.3) 0%, transparent 50%),
+                              radial-gradient(circle at 75% 75%, rgba(232,111,135,0.4) 0%, transparent 50%)`,
           }}
         />
         {label && (
@@ -54,9 +54,9 @@ export function ImagePlaceholder({
             <div
               className="inline-block px-3 py-1.5 rounded text-xs font-medium border"
               style={{
-                background: "rgba(232,148,26,0.15)",
-                borderColor: "rgba(232,148,26,0.4)",
-                color: "#E8941A",
+                background: "rgba(245,163,84,0.15)",
+                borderColor: "rgba(245,163,84,0.4)",
+                color: "#F5A354",
                 fontFamily: "var(--font-dm-sans), sans-serif",
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",

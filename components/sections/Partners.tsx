@@ -45,7 +45,7 @@ export function Partners() {
     <section
       id="partners"
       className="py-14 lg:py-20"
-      style={{ background: "#FAFAF9", borderTop: "1px solid rgba(0,0,0,0.07)", borderBottom: "1px solid rgba(0,0,0,0.07)" }}
+      style={{ background: "var(--act-blush)", borderTop: "1px solid rgba(0,0,0,0.07)", borderBottom: "1px solid rgba(0,0,0,0.07)" }}
       aria-labelledby="partners-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

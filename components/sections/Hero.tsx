@@ -19,7 +19,7 @@ export function Hero() {
     <section
       id="hero"
       className="pt-16 min-h-svh flex flex-col justify-center"
-      style={{ background: "white" }}
+      style={{ background: "var(--act-offwhite)" }}
       aria-label="Hero section"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-20">
@@ -32,10 +32,10 @@ export function Hero() {
               <span
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold"
                 style={{
-                  background: "rgba(61,26,16,0.07)",
+                  background: "rgba(90,31,34,0.07)",
                   color: "var(--act-brown)",
                   fontFamily: "var(--font-dm-sans)",
-                  border: "1px solid rgba(61,26,16,0.12)",
+                  border: "1px solid rgba(90,31,34,0.12)",
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
                 }}
@@ -95,7 +95,7 @@ export function Hero() {
                 onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
                 className="inline-flex items-center gap-2 font-medium rounded-full px-7 h-12 text-base"
                 style={{
-                  border: "1.5px solid rgba(61,26,16,0.2)",
+                  border: "1.5px solid rgba(90,31,34,0.2)",
                   color: "var(--act-text)",
                   fontFamily: "var(--font-dm-sans)",
                   background: "transparent",
@@ -160,11 +160,11 @@ export function Hero() {
             {/* Floating stat pill — top right */}
             <div
               className="absolute -top-4 -right-4 rounded-xl px-4 py-3 shadow-lg flex items-center gap-3"
-              style={{ background: "white", border: "1px solid rgba(0,0,0,0.06)" }}
+              style={{ background: "var(--act-offwhite)", border: "1px solid rgba(0,0,0,0.06)" }}
             >
               <div
                 className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: "rgba(61,26,16,0.08)" }}
+                style={{ background: "rgba(90,31,34,0.08)" }}
               >
                 <span style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700, fontSize: "14px", color: "var(--act-brown)" }}>8</span>
               </div>
@@ -202,7 +202,7 @@ export function Hero() {
             <div
               key={s.l}
               className="rounded-xl px-4 py-3.5 flex flex-col gap-0.5"
-              style={{ background: "rgba(61,26,16,0.04)", border: "1px solid rgba(61,26,16,0.08)" }}
+              style={{ background: "rgba(90,31,34,0.04)", border: "1px solid rgba(90,31,34,0.08)" }}
             >
               <span style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700, fontSize: "22px", color: "var(--act-text)" }}>{s.v}</span>
               <span style={{ fontFamily: "var(--font-dm-sans)", fontSize: "12px", color: "var(--act-muted)" }}>{s.l}</span>

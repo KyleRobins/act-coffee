@@ -34,7 +34,7 @@ export function Navbar() {
       transition={{ duration: 0.45, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 transition-shadow duration-300"
       style={{
-        background: "white",
+        background: "var(--act-offwhite)",
         boxShadow: scrolled ? "0 1px 0 rgba(0,0,0,0.08)" : "none",
       }}
     >
@@ -102,7 +102,7 @@ export function Navbar() {
             >
               <Menu className="w-5 h-5" />
             </SheetTrigger>
-            <SheetContent side="right" className="w-72 p-0" style={{ background: "white" }} showCloseButton={false}>
+            <SheetContent side="right" className="w-72 p-0" style={{ background: "var(--act-offwhite)" }} showCloseButton={false}>
               <div className="flex flex-col h-full pt-6 px-5">
                 <div className="flex items-center justify-between mb-8">
                   <Image
