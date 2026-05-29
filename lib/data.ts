@@ -20,7 +20,7 @@ export interface Partner {
 export const FUNDING_PARTNERS: Partner[] = [
   { name: "Global Gateway", logoUrl: "/images/global-gateway.png", website: "https://global-gateway.europa.eu" },
   { name: "Italian Cooperation", logoUrl: "/images/republic-of-italiano.png", website: "https://www.esteri.it" },
-  { name: "UNIDO", logoUrl: "/images/unido.png", website: "https://www.unido.org" },
+  { name: "UNIDO", logoUrl: "/images/Unido_EN_Light_Blue_centred.png", website: "https://www.unido.org" },
   { name: "ACT Programme", logoUrl: "/images/act.png", website: "https://e4impact.org" },
 ];
 
@@ -30,7 +30,6 @@ export const IMPLEMENTING_PARTNERS: Partner[] = [
   { name: "Fondazione Ernesto Illy", logoUrl: "/images/fondazone-ennesto.png", website: "https://www.fondazioneernestolly.com" },
   { name: "KALRO", logoUrl: "/images/kalro.png", website: "https://www.kalro.org" },
   { name: "Slow Food Coffee Coalition", logoUrl: "/images/slow-food.png", website: "https://www.slowfood.com/slowfood-coffee-coalition" },
-  { name: "IASP", logoUrl: "/images/iasp.png", website: "https://www.iasp.ws" },
   { name: "Università Cattolica", logoUrl: "/images/university-of-catolica.png", website: "https://www.unicatt.it" },
   { name: "Dedan Kimathi University", logoUrl: "/images/dedan-kimathi.png", website: "https://www.dkut.ac.ke" },
 ];
@@ -160,7 +159,7 @@ export const FAQS: FAQ[] = [
   },
   {
     question: "Is there a cost to participate?",
-    answer: "The programme is offered at no cost to selected participants, made possible through the support of UNIDO, the Italian Cooperation, and partner organisations. Participants are responsible for their own accommodation and travel expenses.",
+    answer: "The programme carries a highly subsidised fee of $300 for selected participants — a fraction of its real cost, made possible through the support of UNIDO, the Italian Cooperation, and partner organisations. This fee is paid in three equal instalments of $100, each due at the start of one of the three programme bootcamps. Participants are also responsible for their own travel and accommodation expenses.",
   },
   {
     question: "What is the Business Growth Project?",
@@ -184,6 +183,96 @@ export const ABOUT_COPY = {
   quote: "One of the ACT Programme's key initiatives to strengthen human capital and entrepreneurship across the coffee value chain in East Africa.",
   partners: ["UNIDO", "E4Impact", "Università Cattolica", "illycaffè", "Lavazza"],
 };
+
+export const FEES_COPY = {
+  label: "Programme Fees",
+  heading: "Highly Subsidised at $300",
+  body: "Thanks to the support of UNIDO, the Italian Cooperation, and our partner organisations, the full programme fee is just $300 — a fraction of its real cost. This is paid in three equal instalments of $100, each due at the start of a programme bootcamp.",
+  totalFee: "$300",
+  totalLabel: "Total Programme Fee",
+  instalments: [
+    {
+      number: "01",
+      title: "Bootcamp 1",
+      module: "Module 1 — Production & Processing",
+      amount: "$100",
+      note: "Due at the start of the first in-person bootcamp.",
+    },
+    {
+      number: "02",
+      title: "Bootcamp 2",
+      module: "Module 2 — Distribution & Marketing",
+      amount: "$100",
+      note: "Due at the start of the second in-person bootcamp.",
+    },
+    {
+      number: "03",
+      title: "Bootcamp 3",
+      module: "Module 3 — Business Growth Project",
+      amount: "$100",
+      note: "Due at the start of the third in-person bootcamp.",
+    },
+  ],
+  footerNote: "Participants are responsible for their own travel and accommodation expenses. The $300 fee covers all tuition, materials, and faculty access.",
+  cta: "Apply Now — places are limited and highly competitive.",
+  imageUrl: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=900&q=80&auto=format&fit=crop",
+  imageAlt: "Coffee professional carefully hand-selecting ripe coffee cherries during harvest",
+};
+
+export const NEWS_COPY = {
+  label: "News & Updates",
+  heading: "Programme News & Updates",
+  body: "Stay up to date with training activities, events, and programme milestones. Photos and updates from cohort sessions, Italian partner visits, and field activities will be shared here as the programme progresses.",
+};
+
+export interface NewsItem {
+  id: number;
+  category: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  imageUrl: string;
+  imageAlt: string;
+}
+
+export const NEWS_ITEMS: NewsItem[] = [
+  {
+    id: 1,
+    category: "Programme Launch",
+    title: "ACT Coffee Programme Officially Launches in Kenya",
+    date: "July 2026",
+    excerpt: "The Executive Programme in Coffee Innovation and Business marks a landmark milestone for Kenya's coffee sector, bringing together world-class faculty and leading entrepreneurs.",
+    imageUrl: "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=800&q=80&auto=format&fit=crop",
+    imageAlt: "Lush coffee farm in the Kenyan highlands with rows of thriving coffee plants",
+  },
+  {
+    id: 2,
+    category: "Bootcamp 1",
+    title: "Module 1 Training: Innovations in Coffee Production",
+    date: "Coming 2026",
+    excerpt: "Participants immerse themselves in farm-level innovations, climate-resilient agronomy, and advanced post-harvest processing techniques led by specialist faculty.",
+    imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80&auto=format&fit=crop",
+    imageAlt: "Participants engaged in an interactive bootcamp training session",
+  },
+  {
+    id: 3,
+    category: "Partner Visit",
+    title: "Italian Partners Deliver Specialist Training Week",
+    date: "Coming 2026",
+    excerpt: "Faculty from Fondazione Lavazza, illycaffè, and Università Cattolica del Sacro Cuore travel to Nairobi to lead intensive in-person sessions with the cohort.",
+    imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80&auto=format&fit=crop",
+    imageAlt: "International partners and programme participants collaborating during a workshop session",
+  },
+  {
+    id: 4,
+    category: "Field Activity",
+    title: "Cohort Visits CRI Research Farm in Ruiru",
+    date: "Coming 2026",
+    excerpt: "Participants experience Kenya's premier coffee research station firsthand, exploring experimental varieties and speaking with lead agronomists on the ground.",
+    imageUrl: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80&auto=format&fit=crop",
+    imageAlt: "Vibrant red coffee cherries growing on a healthy coffee plant in Kenya",
+  },
+];
 
 export const VENUE_COPY = {
   label: "Programme Venue",

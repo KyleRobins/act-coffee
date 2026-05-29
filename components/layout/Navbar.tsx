@@ -12,7 +12,8 @@ const NAV_LINKS = [
   { label: "About Us", href: "#about" },
   { label: "Programme", href: "#programme" },
   { label: "Eligibility", href: "#eligibility" },
-  { label: "Benefits", href: "#benefits" },
+  { label: "Fees", href: "#fees" },
+  { label: "News", href: "#news" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -48,7 +49,7 @@ export function Navbar() {
               alt="ACT Programme"
               width={80}
               height={40}
-              style={{ objectFit: "contain", height: "40px", width: "auto" }}
+              style={{ objectFit: "contain", maxHeight: "40px", width: "auto", height: "auto" }}
               priority
             />
           </a>
@@ -110,7 +111,7 @@ export function Navbar() {
                     alt="ACT Programme"
                     width={72}
                     height={36}
-                    style={{ objectFit: "contain", height: "36px", width: "auto" }}
+                    style={{ objectFit: "contain", maxHeight: "36px", width: "auto", height: "auto" }}
                   />
                   <button
                     onClick={() => setMobileOpen(false)}

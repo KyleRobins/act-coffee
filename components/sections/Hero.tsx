@@ -136,11 +136,12 @@ export function Hero() {
             aria-label="Coffee programme imagery"
           >
             {/* Main large image — Kenyan coffee farmer in highland farm */}
-            <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
               <ImagePlaceholder
                 src="/images/Hero.png"
                 alt="Kenyan coffee farmer standing in a highland coffee farm with red coffee cherries"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
             </div>
@@ -154,6 +155,7 @@ export function Hero() {
                 src="/images/eligibilty.png"
                 alt="Woman carefully sorting red coffee cherries at a processing station"
                 fill
+                sizes="176px"
               />
             </div>
 
@@ -217,6 +219,7 @@ export function Hero() {
           src="/images/program-structure.png"
           alt="Hands carefully sorting red coffee cherries on a drying bed in the Kenyan highlands"
           fill
+          sizes="100vw"
           className="object-cover"
         />
         <div

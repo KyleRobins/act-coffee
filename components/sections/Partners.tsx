@@ -23,7 +23,7 @@ function PartnerLogo({ name, logoUrl, website, height = 44 }: { name: string; lo
         alt={name}
         width={160}
         height={height}
-        style={{ objectFit: "contain", maxHeight: `${height}px`, width: "auto" }}
+        style={{ objectFit: "contain", maxHeight: `${height}px`, width: "auto", height: "auto" }}
       />
     </motion.a>
   );
@@ -58,7 +58,7 @@ export function Partners() {
           className="section-label text-center mb-10"
           style={{ color: "var(--act-muted)" }}
         >
-          Delivered in partnership with
+          Initiative of
         </motion.p>
 
         {/* Desktop */}
@@ -112,7 +112,7 @@ export function Partners() {
                     alt={partner.name}
                     width={80}
                     height={32}
-                    style={{ objectFit: "contain", maxHeight: "32px", width: "auto", filter: "grayscale(1) opacity(0.6)" }}
+                    style={{ objectFit: "contain", maxHeight: "32px", width: "auto", height: "auto", filter: "grayscale(1) opacity(0.6)" }}
                   />
                 </div>
               );

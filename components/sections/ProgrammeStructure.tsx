@@ -88,6 +88,7 @@ export function ProgrammeStructure() {
                     alt={`Visual for ${mod.title}`}
                     label={mod.tag}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     gradientFrom={
                       mod.tagColor === "#2C4A2E" ? "#1a3320"
                         : mod.tagColor === "#E86F87" ? "#5A1F22"

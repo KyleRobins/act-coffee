@@ -10,6 +10,7 @@ interface ImagePlaceholderProps {
   fill?: boolean;
   width?: number;
   height?: number;
+  sizes?: string;
   gradientFrom?: string;
   gradientTo?: string;
   priority?: boolean;
@@ -23,6 +24,7 @@ export function ImagePlaceholder({
   fill = false,
   width,
   height,
+  sizes,
   gradientFrom = "#5A1F22",
   gradientTo = "#E86F87",
   priority = false,
@@ -77,6 +79,7 @@ export function ImagePlaceholder({
         src={src}
         alt={alt}
         fill
+        sizes={sizes ?? "100vw"}
         className={`object-cover ${className}`}
         priority={priority}
       />

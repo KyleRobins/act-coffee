@@ -93,6 +93,7 @@ export function About() {
                 src="/images/about.png"
                 alt="Coffee professionals engaged in a collaborative training session on coffee quality"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </motion.div>
@@ -106,7 +107,7 @@ export function About() {
             className="order-1 lg:order-2 flex flex-col gap-6"
           >
             <div>
-              <p className="section-label mb-3" style={{ color: "var(--act-muted)" }}>Delivering Partners</p>
+              <p className="section-label mb-3" style={{ color: "var(--act-muted)" }}>Initiative of</p>
               <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "16px", lineHeight: "1.75", color: "var(--act-muted)" }}>
                 A landmark collaboration uniting leading international development organisations, renowned coffee companies, and Kenya&rsquo;s foremost academic and research institutions.
               </p>

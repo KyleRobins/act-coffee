@@ -6,7 +6,9 @@ import { Partners } from "@/components/sections/Partners";
 import { Eligibility } from "@/components/sections/Eligibility";
 import { ProgrammeStructure } from "@/components/sections/ProgrammeStructure";
 import { Benefits } from "@/components/sections/Benefits";
+import { Fees } from "@/components/sections/Fees";
 import { Venue } from "@/components/sections/Venue";
+import { News } from "@/components/sections/News";
 import { ApplicationCTA } from "@/components/sections/ApplicationCTA";
 import { FAQ } from "@/components/sections/FAQ";
 
@@ -21,7 +23,9 @@ export default function Home() {
         <Eligibility />
         <ProgrammeStructure />
         <Benefits />
+        <Fees />
         <Venue />
+        <News />
         <ApplicationCTA />
         <FAQ />
       </main>
