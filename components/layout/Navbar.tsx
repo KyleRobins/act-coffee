@@ -43,13 +43,13 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <a href="#" className="flex items-center" aria-label="ACT Programme — Home">
+          <a href="#" className="flex items-center" aria-label="ACT Coffee Programme — Home">
             <Image
               src="/images/act.png"
-              alt="ACT Programme"
-              width={80}
-              height={40}
-              style={{ objectFit: "contain", maxHeight: "40px", width: "auto", height: "auto" }}
+              alt="ACT Coffee Programme"
+              width={140}
+              height={56}
+              style={{ objectFit: "contain", maxHeight: "56px", width: "auto", height: "auto" }}
               priority
             />
           </a>
@@ -108,10 +108,10 @@ export function Navbar() {
                 <div className="flex items-center justify-between mb-8">
                   <Image
                     src="/images/act.png"
-                    alt="ACT Programme"
-                    width={72}
-                    height={36}
-                    style={{ objectFit: "contain", maxHeight: "36px", width: "auto", height: "auto" }}
+                    alt="ACT Coffee Programme"
+                    width={120}
+                    height={48}
+                    style={{ objectFit: "contain", maxHeight: "48px", width: "auto", height: "auto" }}
                   />
                   <button
                     onClick={() => setMobileOpen(false)}

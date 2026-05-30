@@ -17,21 +17,28 @@ export interface Partner {
   website: string;
 }
 
-export const FUNDING_PARTNERS: Partner[] = [
+// Initiative of — institutional / funding bodies (alphabetical)
+export const INITIATIVE_PARTNERS: Partner[] = [
+  { name: "ACT Coffee Programme", logoUrl: "/images/act.png", website: "https://e4impact.org" /* TODO: replace with official ACT page URL from UNIDO */ },
   { name: "Global Gateway", logoUrl: "/images/global-gateway.png", website: "https://global-gateway.europa.eu" },
+  { name: "Government of Kenya", logoUrl: "/images/gok.jpg", website: "https://www.kenya.go.ke" },
   { name: "Italian Cooperation", logoUrl: "/images/republic-of-italiano.png", website: "https://www.esteri.it" },
   { name: "UNIDO", logoUrl: "/images/Unido_EN_Light_Blue_centred.png", website: "https://www.unido.org" },
-  { name: "ACT Programme", logoUrl: "/images/act.png", website: "https://e4impact.org" },
 ];
 
+// Implemented by — delivery organisations (alphabetical)
 export const IMPLEMENTING_PARTNERS: Partner[] = [
+  { name: "Dedan Kimathi University of Technology", logoUrl: "/images/dedan-kimathi.png", website: "https://www.dkut.ac.ke" },
   { name: "E4Impact Foundation", logoUrl: "/images/e4i-foundation.png", website: "https://e4impact.org" },
-  { name: "Fondazione Lavazza", logoUrl: "/images/fondazione.png", website: "https://www.fondazionelavazza.it" },
-  { name: "Fondazione Ernesto Illy", logoUrl: "/images/fondazone-ennesto.png", website: "https://www.fondazioneernestolly.com" },
   { name: "KALRO", logoUrl: "/images/kalro.png", website: "https://www.kalro.org" },
+  { name: "Università Cattolica del Sacro Cuore", logoUrl: "/images/university-of-catolica.png", website: "https://www.unicatt.it" },
+];
+
+// In partnership with — commercial and NGO partners (alphabetical)
+export const PARTNERSHIP_PARTNERS: Partner[] = [
+  { name: "Fondazione Ernesto Illy", logoUrl: "/images/fondazone-ennesto.png", website: "https://www.fondazioneernestolly.com" },
+  { name: "Fondazione Lavazza", logoUrl: "/images/fondazione.png", website: "https://www.fondazionelavazza.it" },
   { name: "Slow Food Coffee Coalition", logoUrl: "/images/slow-food.png", website: "https://www.slowfood.com/slowfood-coffee-coalition" },
-  { name: "Università Cattolica", logoUrl: "/images/university-of-catolica.png", website: "https://www.unicatt.it" },
-  { name: "Dedan Kimathi University", logoUrl: "/images/dedan-kimathi.png", website: "https://www.dkut.ac.ke" },
 ];
 
 export interface EligibilityCriterion {
@@ -155,7 +162,7 @@ export const FAQS: FAQ[] = [
   },
   {
     question: "When does the programme start and what are the deadlines?",
-    answer: "The programme is scheduled to start in July 2026. Application deadlines and selection timelines will be communicated through official ACT Programme channels and the E4Impact Foundation website.",
+    answer: "The programme is scheduled to start in July 2026. Application deadlines and selection timelines will be communicated through official ACT Coffee Programme channels and the E4Impact Foundation website.",
   },
   {
     question: "Is there a cost to participate?",
@@ -178,9 +185,9 @@ export const FAQS: FAQ[] = [
 export const ABOUT_COPY = {
   label: "About the Programme",
   heading: "Transforming Kenya's Coffee Sector Through Innovation",
-  body: "The Executive Programme in Coffee Innovation and Business is a landmark initiative under the ACT (Advancing Climate-Resilience and Transformation in African Coffee) Programme. Designed for Kenya's leading coffee entrepreneurs and cooperative leaders, it delivers world-class business education anchored in the realities of the African coffee sector.",
+  body: "The Executive Programme in Coffee Innovation and Business is a landmark initiative under the ACT Coffee Programme (Advancing Climate-Resilience and Transformation in African Coffee). Designed for Kenya's leading coffee entrepreneurs and cooperative leaders, it delivers world-class business education anchored in the realities of the African coffee sector.",
   body2: "Participants gain expert knowledge across the full value chain — from climate-resilient production to international market positioning — supported by a distinguished faculty of global coffee industry leaders and development specialists.",
-  quote: "One of the ACT Programme's key initiatives to strengthen human capital and entrepreneurship across the coffee value chain in East Africa.",
+  quote: "One of the ACT Coffee Programme's key initiatives to strengthen human capital and entrepreneurship across the coffee value chain in East Africa.",
   partners: ["UNIDO", "E4Impact", "Università Cattolica", "illycaffè", "Lavazza"],
 };
 

@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Executive Programme in Coffee Innovation and Business | ACT Programme",
+  title: "Executive Programme in Coffee Innovation and Business | ACT Coffee Programme",
   description:
     "Strengthening innovation, entrepreneurship and value creation across Kenya's coffee sector. An executive programme by UNIDO, E4Impact, and Università Cattolica — starting July 2026.",
   keywords: ["coffee", "Kenya", "ACT programme", "executive education", "UNIDO", "E4Impact", "coffee innovation"],

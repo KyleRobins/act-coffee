@@ -41,7 +41,7 @@ export function Hero() {
                 }}
               >
                 <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--act-orange)" }} aria-hidden="true" />
-                ACT Programme · Kenya 2026
+                ACT Coffee Programme · Kenya 2026
               </span>
             </motion.div>
 
@@ -238,7 +238,7 @@ export function Hero() {
               lineHeight: 1.6,
             }}
           >
-            &ldquo;One of the ACT Programme&rsquo;s key initiatives to strengthen human capital across the coffee value chain in East Africa.&rdquo;
+            &ldquo;One of the ACT Coffee Programme&rsquo;s key initiatives to strengthen human capital across the coffee value chain in East Africa.&rdquo;
           </p>
         </div>
       </div>

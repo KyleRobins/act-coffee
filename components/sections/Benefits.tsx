@@ -54,7 +54,7 @@ export function Benefits() {
             className="mt-4 max-w-xl mx-auto"
             style={{ fontFamily: "var(--font-dm-sans)", fontSize: "16px", lineHeight: "1.75", color: "var(--act-muted)" }}
           >
-            Five high-impact outcomes that separate ACT Programme graduates from the rest of the field.
+            Five high-impact outcomes that separate ACT Coffee Programme graduates from the rest of the field.
           </p>
         </motion.div>
 

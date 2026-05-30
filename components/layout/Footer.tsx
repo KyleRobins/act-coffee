@@ -42,10 +42,10 @@ export function Footer() {
             <div className="mb-4">
               <Image
                 src="/images/act.png"
-                alt="ACT Programme"
-                width={80}
-                height={40}
-                style={{ objectFit: "contain", height: "40px", width: "auto", filter: "brightness(0) invert(1)" }}
+                alt="ACT Coffee Programme"
+                width={140}
+                height={70}
+                style={{ objectFit: "contain", maxHeight: "70px", width: "auto", height: "auto", filter: "brightness(0) invert(1)" }}
               />
             </div>
             <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "13px", lineHeight: "1.75", color: "rgba(255,255,255,0.5)", marginBottom: "16px" }}>
@@ -127,7 +127,7 @@ export function Footer() {
       <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "12px", color: "rgba(255,255,255,0.3)" }}>
-            © 2026 ACT Programme · Promoted by UNIDO · Funded by Italian Cooperation · Implemented by E4Impact
+            © 2026 ACT Coffee Programme · Promoted by UNIDO · Funded by Italian Cooperation · Implemented by E4Impact
           </p>
           <div className="flex gap-4">
             {["Terms of Use", "Privacy Policy", "Cookies"].map((t) => (
