@@ -65,7 +65,7 @@ function PartnerLogo({
           alt={name}
           width={180}
           height={height}
-          style={{ objectFit: "contain", maxHeight: `${height}px`, width: "auto", height: "auto" }}
+          style={{ objectFit: "contain", maxHeight: `${height}px`, width: "auto", height: "auto", mixBlendMode: "multiply" }}
         />
       )}
     </motion.a>
@@ -230,6 +230,7 @@ export function Partners() {
                       width: "auto",
                       height: "auto",
                       filter: "grayscale(1) opacity(0.6)",
+                      mixBlendMode: "multiply",
                     }}
                   />
                 )}
