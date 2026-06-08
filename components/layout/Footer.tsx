@@ -52,7 +52,7 @@ export function Footer() {
               Advancing Climate-Resilience and Transformation in African Coffee. Implemented by E4Impact Foundation.
             </p>
             <div className="flex gap-2.5">
-              <a href="https://www.e4impact.org" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.e4impactkenya.org" target="_blank" rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors hover:bg-white/15"
                 style={{ background: "rgba(255,255,255,0.08)" }} aria-label="E4Impact website">
                 <Globe className="w-3.5 h-3.5" style={{ color: "rgba(255,255,255,0.6)" }} />
