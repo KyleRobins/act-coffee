@@ -19,7 +19,7 @@ export interface Partner {
 
 // Initiative of — institutional / funding bodies (alphabetical)
 export const INITIATIVE_PARTNERS: Partner[] = [
-  { name: "ACT Coffee Programme", logoUrl: "/images/act.png", website: "https://e4impact.org" /* TODO: replace with official ACT page URL from UNIDO */ },
+  { name: "ACT Coffee Programme", logoUrl: "/images/act.png", website: "https://www.unido.org/act" },
   { name: "Global Gateway", logoUrl: "/images/global-gateway.png", website: "https://global-gateway.europa.eu" },
   { name: "Government of Kenya", logoUrl: "/images/gok.jpg", website: "https://www.kenya.go.ke" },
   { name: "Italian Cooperation", logoUrl: "/images/republic-of-italiano.png", website: "https://www.esteri.it" },
