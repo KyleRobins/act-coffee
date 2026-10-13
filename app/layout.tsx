@@ -10,6 +10,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://act.e4impactkenya.org"),
   title: "Executive Programme in Coffee Innovation and Business | ACT Coffee Programme",
   description:
     "Strengthening innovation, entrepreneurship and value creation across Kenya's coffee sector. An executive programme by UNIDO, E4Impact, and Università Cattolica — starting July 2026.",
@@ -18,6 +19,13 @@ export const metadata: Metadata = {
     title: "Executive Programme in Coffee Innovation and Business",
     description: "Join an elite cohort of Kenya's leading coffee professionals. 8 months, 156 hours, 3 modules. Starting July 2026.",
     type: "website",
+    images: [{ url: "/images/act.png", width: 581, height: 429, alt: "ACT Coffee Programme" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Executive Programme in Coffee Innovation and Business",
+    description: "Join an elite cohort of Kenya's leading coffee professionals. 8 months, 156 hours, 3 modules. Starting July 2026.",
+    images: ["/images/act.png"],
   },
 };
 
