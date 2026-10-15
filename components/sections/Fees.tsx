@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { FEES_COPY, APPLY_URL } from "@/lib/data";
 
@@ -62,32 +61,6 @@ export function Fees() {
             >
               {FEES_COPY.body}
             </p>
-
-            {/* Image */}
-            <div className="relative rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: "4/3" }}>
-              <Image
-                src={FEES_COPY.imageUrl}
-                alt={FEES_COPY.imageAlt}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-              {/* Overlay chip */}
-              <div
-                className="absolute bottom-4 left-4 rounded-xl px-4 py-2.5 flex items-center gap-3"
-                style={{ background: "rgba(26,15,10,0.72)", backdropFilter: "blur(6px)" }}
-              >
-                <div>
-                  <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "11px", color: "rgba(255,255,255,0.55)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Total Fee</p>
-                  <p style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700, fontSize: "20px", color: "white" }}>{FEES_COPY.totalFee}</p>
-                </div>
-                <div style={{ width: "1px", height: "32px", background: "rgba(255,255,255,0.2)" }} aria-hidden="true" />
-                <div>
-                  <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "11px", color: "rgba(255,255,255,0.55)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Payment</p>
-                  <p style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700, fontSize: "20px", color: "white" }}>One-off</p>
-                </div>
-              </div>
-            </div>
           </motion.div>
 
           {/* Right — fee summary */}

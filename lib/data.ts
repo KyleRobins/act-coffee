@@ -200,8 +200,6 @@ export const FEES_COPY = {
   paymentNote: "One-off payment",
   footerNote: "Participants are responsible for their own travel and accommodation expenses. The $150 fee covers all tuition, materials, and faculty access.",
   cta: "Apply Now — places are limited and highly competitive.",
-  imageUrl: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=900&q=80&auto=format&fit=crop",
-  imageAlt: "Coffee professional carefully hand-selecting ripe coffee cherries during harvest",
 };
 
 export const COHORT_COPY = {
