@@ -4,30 +4,30 @@ import Image from "next/image";
 import { Mail, Globe, ExternalLink } from "lucide-react";
 
 const COMPANY_LINKS = [
-  { label: "About Us", href: "#about" },
-  { label: "Our Partners", href: "#partners" },
+  { label: "About Us", href: "/#about" },
+  { label: "Our Partners", href: "/#partners" },
   { label: "Contact", href: "mailto:coffee@e4impact.org" },
 ];
 
 const PROGRAMME_LINKS = [
-  { label: "Module 1: Upstream", href: "#programme" },
-  { label: "Module 2: Downstream", href: "#programme" },
-  { label: "Module 3: Project", href: "#programme" },
-  { label: "See All Modules", href: "#programme" },
+  { label: "Module 1: Upstream", href: "/#programme" },
+  { label: "Module 2: Downstream", href: "/#programme" },
+  { label: "Module 3: Project", href: "/#programme" },
+  { label: "See All Modules", href: "/#programme" },
 ];
 
 const APPLY_LINKS = [
-  { label: "Apply Now", href: "#apply" },
-  { label: "Eligibility", href: "#eligibility" },
-  { label: "Benefits", href: "#benefits" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Apply Now", href: "/#apply" },
+  { label: "Eligibility", href: "/#eligibility" },
+  { label: "Benefits", href: "/#benefits" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 const SUPPORT_LINKS = [
   { label: "Contact Us", href: "mailto:coffee@e4impact.org" },
   { label: "E4Impact Website", href: "https://www.e4impact.org" },
   { label: "UNIDO Website", href: "https://www.unido.org" },
-  { label: "FAQ", href: "#faq" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export function Footer() {

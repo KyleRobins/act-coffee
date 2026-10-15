@@ -79,18 +79,18 @@ export function Fees() {
               >
                 <div>
                   <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "11px", color: "rgba(255,255,255,0.55)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Total Fee</p>
-                  <p style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700, fontSize: "20px", color: "white" }}>$300</p>
+                  <p style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700, fontSize: "20px", color: "white" }}>{FEES_COPY.totalFee}</p>
                 </div>
                 <div style={{ width: "1px", height: "32px", background: "rgba(255,255,255,0.2)" }} aria-hidden="true" />
                 <div>
-                  <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "11px", color: "rgba(255,255,255,0.55)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Instalments</p>
-                  <p style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700, fontSize: "20px", color: "white" }}>3 × $100</p>
+                  <p style={{ fontFamily: "var(--font-dm-sans)", fontSize: "11px", color: "rgba(255,255,255,0.55)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Payment</p>
+                  <p style={{ fontFamily: "var(--font-dm-sans)", fontWeight: 700, fontSize: "20px", color: "white" }}>One-off</p>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Right — instalment rows */}
+          {/* Right — fee summary */}
           <motion.div
             initial={shouldReduceMotion ? {} : { opacity: 0, x: 28 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -139,77 +139,10 @@ export function Fees() {
                   textAlign: "right",
                 }}
               >
-                Paid in 3 instalments of{" "}
-                <strong style={{ color: "rgba(255,255,255,0.9)" }}>$100</strong>{" "}
-                — one per bootcamp.
+                Paid as a{" "}
+                <strong style={{ color: "rgba(255,255,255,0.9)" }}>single, one-off payment</strong>{" "}
+                upon acceptance.
               </p>
-            </div>
-
-            {/* Instalment cards */}
-            <div className="flex flex-col gap-3">
-              {FEES_COPY.instalments.map((inst) => (
-                <div
-                  key={inst.number}
-                  className="rounded-xl flex items-center gap-5 px-5 py-4"
-                  style={{
-                    background: "white",
-                    border: "1px solid rgba(0,0,0,0.08)",
-                    boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
-                  }}
-                >
-                  <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(90,31,34,0.07)" }}
-                  >
-                    <span
-                      style={{
-                        fontFamily: "var(--font-dm-sans)",
-                        fontWeight: 700,
-                        fontSize: "13px",
-                        color: "var(--act-brown)",
-                      }}
-                    >
-                      {inst.number}
-                    </span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p
-                      style={{
-                        fontFamily: "var(--font-dm-sans)",
-                        fontWeight: 600,
-                        fontSize: "15px",
-                        color: "var(--act-text)",
-                        marginBottom: "2px",
-                      }}
-                    >
-                      {inst.title}
-                    </p>
-                    <p
-                      style={{
-                        fontFamily: "var(--font-dm-sans)",
-                        fontSize: "12.5px",
-                        color: "var(--act-muted)",
-                        whiteSpace: "nowrap",
-                        overflow: "hidden",
-                        textOverflow: "ellipsis",
-                      }}
-                    >
-                      {inst.module}
-                    </p>
-                  </div>
-                  <p
-                    style={{
-                      fontFamily: "var(--font-dm-sans)",
-                      fontWeight: 700,
-                      fontSize: "18px",
-                      color: "var(--act-brown)",
-                      flexShrink: 0,
-                    }}
-                  >
-                    {inst.amount}
-                  </p>
-                </div>
-              ))}
             </div>
 
             {/* Footer note + CTA */}

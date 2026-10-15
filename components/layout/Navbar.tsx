@@ -9,12 +9,13 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { APPLY_URL } from "@/lib/data";
 
 const NAV_LINKS = [
-  { label: "About Us", href: "#about" },
-  { label: "Programme", href: "#programme" },
-  { label: "Eligibility", href: "#eligibility" },
-  { label: "Fees", href: "#fees" },
-  { label: "News", href: "#news" },
-  { label: "FAQ", href: "#faq" },
+  { label: "About Us", href: "/#about" },
+  { label: "Programme", href: "/#programme" },
+  { label: "Eligibility", href: "/#eligibility" },
+  { label: "Fees", href: "/#fees" },
+  { label: "Cohort 1", href: "/cohort" },
+  { label: "News", href: "/#news" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export function Navbar() {
@@ -43,7 +44,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <a href="#" className="flex items-center" aria-label="ACT Coffee Programme — Home">
+          <a href="/" className="flex items-center" aria-label="ACT Coffee Programme — Home">
             <Image
               src="/images/act.png"
               alt="ACT Coffee Programme"

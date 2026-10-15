@@ -8,6 +8,7 @@ import { ProgrammeStructure } from "@/components/sections/ProgrammeStructure";
 import { Benefits } from "@/components/sections/Benefits";
 import { Fees } from "@/components/sections/Fees";
 import { Venue } from "@/components/sections/Venue";
+import { CohortTeaser } from "@/components/sections/CohortTeaser";
 import { News } from "@/components/sections/News";
 import { ApplicationCTA } from "@/components/sections/ApplicationCTA";
 import { FAQ } from "@/components/sections/FAQ";
@@ -25,6 +26,7 @@ export default function Home() {
         <Benefits />
         <Fees />
         <Venue />
+        <CohortTeaser />
         <News />
         <ApplicationCTA />
         <FAQ />
